@@ -1,0 +1,189 @@
+/* Padrão */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+.navbar-container {
+  height: 80px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.navbar-items {
+  line-height: 40px;
+  color: white;
+  display: flex;
+  width: 75vw;
+  margin: 0px 230px;
+}
+
+.logo {
+  flex: 1.5;
+}
+
+.logo img{
+  width: 120px;
+}
+
+.nav-items {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-items li {
+  list-style: none;
+}
+
+.navbar-items a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.navbar-items a:hover{
+  color: #32d332;
+}
+
+/* Main */
+
+main{
+  height:88.7vh;
+  background-image: url("../img/showcase.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Title */
+.title{
+  margin-top:-100px;
+  color: white;
+  text-align: center;
+  font-size: 68px;
+}
+
+#subtitle {
+  margin-top:20px;
+  color: white;
+  font-size:20px;
+}
+
+/* CTA Button */
+
+.cta-btn{
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  margin-top:40px;
+  padding: 20px;
+  width: 250px;
+  color: white;
+  font-weight: bold;
+  background-color:#32d332;
+  transition: 0.2s;
+}
+
+.cta-btn:hover{
+  width: 260px;
+  background-color:#57f357;
+}
+
+/* Footer */
+
+footer{
+  background-color: black;
+  height: 60vh;
+}
+
+.container-items{
+  list-style:none;
+}
+
+.container-items a{
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.container-items h5{
+  color: rgb(151, 151, 151);
+}
+
+.container-items{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 80px 50px;
+}
+
+.footer-items{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.footer-items a:hover{
+  color:#32d332;
+}
+
+.footer-logo{
+  flex:0.3;
+  margin-left: 100px;
+}
+
+.footer-logo img{
+  width: 130px;
+}
+
+.midia-btn{
+  margin-right: 90px;
+  margin-left: 200px;
+}
+
+.social-btn{
+  background-color: rgb(41, 41, 41);
+  text-align: center;
+  width: 15px;
+  height: 15px;
+  padding: 25px;
+  border-radius: 50%;
+  border:none;
+  margin-right: 10px;
+  
+}
+
+.social-btn i{
+  position: relative;
+  top: -12px;
+  left: -11px;
+  cursor: pointer;
+  color: white;
+  font-size: 27px;
+  text-align: center;
+}
+
+.social-btn i:hover{
+  color:#32d332;
+}
+
+
+/*Responsividade*/
+
+@media(max-width:390px){
+  div{
+    background-color: red;
+  }
+}
